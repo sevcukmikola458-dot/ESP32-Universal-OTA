@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ESP32 Universal OTA</title>
+<style>
+body {
+  font-family: Arial;
+  text-align:center;
+  background:#eeeeee;
+  margin-top:40px;
+}
+.box {
+  background:white;
+  padding:25px;
+  border-radius:10px;
+  display:inline-block;
+}
+button {
+  padding:12px 25px;
+  font-size:18px;
+}
+</style>
+</head>
 
+<body>
+<div class="box">
+<h2>ESP32 Universal OTA</h2>
+
+<form method="POST" action="/update" enctype="multipart/form-data">
+<input type="file" name="update">
+<br><br>
+<button type="submit">Прошити BIN</button>
+</form>
+
+</div>
+</body>
+</html>
